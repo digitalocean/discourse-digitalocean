@@ -393,6 +393,18 @@ button.btn-social.oauth2_basic :hover {
     color: #ededed;
 }
 
+// fix some btn-danger weirdness
 .btn-danger[href] {
-    background-color: #e45735;
+    background-color: #e45735 !important;
+}
+
+.btn-danger {
+    color: #fff !important;
+    font-weight: normal !important;
+    background: #e45735 !important;
+    border: none !important;
+}
+
+.btn-danger :hover {
+    background: red !important;
 }
