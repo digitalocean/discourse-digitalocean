@@ -1,0 +1,35 @@
+<script>
+$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $(".d-header").addClass("scrolling");
+       /* $(".alert-bootstrap-mode").addClass("hidden") */
+    }
+    else {
+        $(".d-header").removeClass("scrolling");
+        /* $(".alert-bootstrap-mode").addClass("hidden") */
+    }
+});
+
+</script>
+
+    <!-- BUI CSS -->
+    <link rel="stylesheet" href="https://assets.digitalocean.com/bui/1.0.0/bui.css">
+
+    <!-- BUI JS -->
+    <script src="https://assets.digitalocean.com/bui/1.0.0/bui.js"></script>
+    
+    <!--
+    <!-- BUI ICONS -->
+    <!-- Icon Library should be included where possible with a template. This brings the library into the head using AJAX -->
+    <!--script>
+      var xhr = new XMLHttpRequest;
+      xhr.open('get','https://assets.digitalocean.com/bui/1.0.0/bui-icons.svg',true);
+      xhr.onreadystatechange = function(){
+        if (xhr.readyState != 4) return;
+        var svg = xhr.responseXML.documentElement;
+        svg = document.importNode(svg,true); // surprisingly optional in these browsers
+        document.head.appendChild(svg);
+      };
+      xhr.send();  -->
+    </script>

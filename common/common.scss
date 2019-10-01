@@ -1,0 +1,398 @@
+/* Customizations added by nwade@digitalocean.com */
+
+/* first order of business, we load the necessary DigitalOcean Sailec fonts already licensed from myfonts.net into theme
+assets with usable variable names, and then declare the font-face parts here 
+
+Note: if we move the DigitalOcean theme to a git repo, we need to move the uploaded font assets along with it, see this
+article https://meta.discourse.org/t/include-images-and-fonts-in-themes-and-components/62459 */
+
+@font-face {
+  font-family: Sailec-Regular;
+  src: url($Sailec-Regular) format('woff2')
+}
+
+@font-face {
+  font-family: Sailec-Medium;
+  src: url($Sailec-Medium) format('woff2')
+}
+
+@font-face {
+  font-family: Sailec-Bold;
+  src: url($Sailec-Bold) format('woff2')
+}
+
+@font-face {
+  font-family: Sailec-Light;
+  src: url($Sailec-Light) format('woff2')
+}
+
+@font-face {
+  font-family: Sailec-RegularItalic;
+  src: url($Sailec-RegularItalic) format('woff2')
+}
+
+@font-face {
+  font-family: Sailec-MediumItalic;
+  src: url($Sailec-MediumItalic) format('woff2')
+}
+
+/* basic content formatting of typography is my chosen CSS first operation */
+
+body {
+    font-family: "Sailec-Regular", ;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(3,27,78,.7);
+}
+
+p, li {
+    line-height: 24px;
+}
+
+a, a:visited {
+    color: #0069ff;
+}
+
+.extra-info-wrapper .topic-link {
+    color: rgba(3,27,78,.6);
+}
+
+#topic-title h1 a {
+    color: rgba(3,27,78,.6);
+}
+
+.topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title {
+    color: rgba(3,27,78,.8);
+}
+
+.topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification) {
+    color: #91a2ab;
+}
+
+.cooked h1, .cooked h2, .cooked h3, .cooked h5, .cooked h6, .d-editor-preview h1, .d-editor-preview h2, .d-editor-preview h3, .d-editor-preview h4, .d-editor-preview h5, .d-editor-preview h6 {
+    color: rgba(3,27,78,.6);
+    font-family: "Sailec-Medium";
+    font-weight: 400;
+    margin: 30px 0 15px;
+}
+
+.badge-wrapper .badge-category .category-name {
+    color: #6a7793;
+    line-height: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.badge-wrapper.bullet span.badge-category {
+    color: #6a7793;
+}
+
+button.sign-up-button {
+    font-weight: 700;
+}
+
+/* header customization in conjunction with </body> $(window).scroll script */
+
+.d-header {
+    height: 62px !important;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+    transition: all 0.4s ease;
+}
+
+.d-header.scrolling {
+    height: 62px !important;
+    box-shadow: 0 2px 4px rgba(3,27,78,.1);
+    transition: all 0.2s ease;
+}
+
+img#site-logo.logo-big {
+    min-height:29px;
+    height:29px;
+    margin: 5px 0;
+}
+
+img#site-logo.logo-small {
+    min-height:29px;
+    height: 29px;
+    margin: 0 12px 0 0;
+    float: left;
+}
+
+.mobile-view #site-logo {
+    padding-top: 2px;
+}
+
+/*
+.mobile-view .nav-pills {
+    padding: 6px 12px 0 12px !important;
+}
+*/
+
+.mobile-view .navigation-toggle {
+    max-height: 31px;
+}
+
+.d-header-icons .header-dropdown-toggle {
+    position: relative;
+    box-sizing: unset;
+}
+
+/* menu customizations */ 
+
+.select-kit .select-kit-row.is-highlighted {
+    background: #f3f5f9;
+}
+
+.alert.alert-info {
+    background-color: #f3f5f9;
+    color: #031b4e;
+}
+
+.nav-pills>li>a:hover {
+    color: #0069ff;
+    background-color: transparent;
+}
+
+.nav-pills>li>a {
+    color: rgba(3,27,78,.7);
+    background-color: transparent;
+}
+
+.nav-pills>li.active>a, .nav-pills>li>a.active {
+    background-color: #0069ff;
+    color: #fff;
+}
+
+ul#navigation-bar {
+    margin: 0;
+    padding: 0;
+}
+
+.open .grippie {
+    background: #0069ff;
+}
+
+#reply-control.draft, #reply-control.saving {
+    background: #0069ff;
+}
+
+/* The Digital Ocean footer */ 
+
+.GlobalFooter {
+    background-color: #010e28;
+    color: hsla(0,0%,100%,.5);
+    font-size: 14px;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    margin-top: 10px;
+}
+
+.suggested-topics-message {
+    margin-bottom: 65px;
+}
+
+dt.GlobalFooter-listHeading {
+    color: rgba(255,255,255,1) !important;
+    padding: 0 0 15px 0;
+    font-weight: 400;
+}
+
+dd.GlobalFooter-listItem, dd.GlobalFooter-listItem a, dd.GlobalFooter-listItem a:visited {
+    color: hsla(0,0%,100%,.5);
+}
+
+.mui-Container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+
+.bui-GridContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-top: -16px;
+    list-style: none;
+    line-height: 19px;
+}
+
+.bui-GridContainer a, .bui-GridContainer a:visited  {
+    color: rgba(255,255,255,.5);
+}
+
+.bui-GridContainer a:hover  {
+    color: rgba(255,255,255,.8);
+}
+
+/*
+
+@media (min-width: 768px) { \
+    .bui-GridContainer-largeGutter\@medium {
+        margin-top: -32px;
+        margin-left: -32px;
+    }
+}
+
+@media (min-width: 960px) {
+    .bui-Col-4\@large {
+        -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+@media (min-width: 768px) {
+    .bui-Col-12\@medium {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .bui-GridContainer-largeGutter\@medium>* {
+        padding-left: 32px;
+        padding-top: 32px;
+    }
+}
+
+.bui-Inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: -16px 0 0 -16px;
+    color: rgba(255,255,255,.5);
+}
+
+.bui-Inline>* {
+    margin-left: 16px;
+    margin-top: 16px;
+    color: rgba(255,255,255,.5);
+} */
+
+/* experimental and temporary features here */
+
+.alert-bootstrap-mode.hidden {
+    display: none;
+}
+
+@keyframes background-fade-highlight {
+  0% {
+    background-color: #f3f5f9;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.select-kit.combo-box {
+    background: black;
+}
+
+.select-kit.combo-box .select-kit-header.is-focused {
+border: 1px solid rgba(3,27,78,.3);
+box-shadow: 0 0 6px 0 rgba(3,27,78,.3);
+}
+
+.list-controls .combo-box .combo-box-header {
+    color: #6a7793;
+    line-height: 17px;
+    background: #f3f5f9;
+    border: 1px solid #f3f5f9;
+}
+
+/* I am not sure if these header properties are the right treatment, there may 
+be unintended consequences on mobile or elsewhere I just haven't looked yet */
+
+h1, h2, h3, h4 {
+    color: rgba(3,27,78,0.7) !important;
+    text-transform: none !important;
+    font-family: "Sailec-Medium",Proxima Nova,proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    font-weight: 300 !important;
+}
+
+h3 {
+    font-size: 18px !important;
+}
+
+#suggested-topics h3 .badge-wrapper.bullet {
+    margin-left: 10px;
+}
+
+.topic-list .topic-excerpt {
+    color: #919191;
+}
+
+.topic-list td {
+    line-height: 2.4em;
+}
+
+.mobile-view .topic-list td {
+    line-height: unset;
+    padding-top: 10px;
+}
+
+/* BUI expects things Discourse doesn't, and so on */
+
+*, :after, :before {
+    box-sizing: unset;
+}
+
+h2 {
+    font-size: 1.3rem !important;
+}
+
+.category-list tbody .category h3 a[href] {
+    color: rgba(3,27,78,.6);
+}
+
+.footer-message {
+    margin-top: 55px;
+}
+
+.top-title-buttons {
+    display: block;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .date-section {
+    color: unset;
+}
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-row .date-section {
+    color: unset;
+}
+
+button.btn-social.oauth2_basic {
+    background-color: #0069ff;
+    color: #ffffff;
+}
+
+button.btn-social.oauth2_basic :hover {
+    background-color: #0052ff;
+    color: #ffffff;
+}
+
+.discourse-no-touch .btn:hover .d-icon, .discourse-no-touch .btn.btn-hover .d-icon {
+    color: #ededed;
+}
+
+.btn-danger[href] {
+    background-color: #e45735;
+}

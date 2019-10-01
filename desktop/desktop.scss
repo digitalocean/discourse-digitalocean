@@ -1,0 +1,63 @@
+/* diddle and fiddle the buttons */
+
+.btn {
+    font-weight: normal;
+    color: #0069ff;
+    background: #fff;
+    border: 1px solid #0069ff;
+    border-radius: 5px;    
+}
+
+.btn:hover {
+    background: #0069ff;
+    color: #fff;
+}
+
+.btn-primary {
+    font-weight: normal;
+    color: #fff;
+    background: #0069ff;
+    border: 1px solid #0069ff;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: #0052ff;
+    color: #fff;
+}
+
+.discourse-no-touch .btn:hover {
+    background: #1633ff;
+    color: #fff;
+}
+
+.list-controls .btn {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+button.sign-up-button {
+    font-size: 14px;
+    background: #fff;
+    color: #0069ff;
+}
+
+button.login-button {
+    font-family: "Sailec-Medium";
+    font-weight: 400;
+    font-size: 14px;
+    background: transparent;
+    color: rgba(3,27,78,.7);
+    border: none;
+}
+
+.d-editor-button-bar button {
+    background-color: transparent;
+    border: none;
+}
+
+.d-editor-button-bar button:hover {
+    background-color: transparent;
+    border: none;
+    color: #c0c0c0;
+}

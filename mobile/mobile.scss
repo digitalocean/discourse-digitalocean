@@ -1,0 +1,46 @@
+/* diddle and fiddle the buttons */
+
+.btn {
+    font-weight: normal;
+    color: #0069ff;
+    background: #fff;
+    border: 1px solid #0069ff;
+    border-radius: 5px;    
+}
+
+.btn-primary {
+    font-weight: normal;
+    color: #fff;
+    background: #0069ff;
+    border: 1px solid #0069ff;
+    border-radius: 5px;
+}
+
+.list-controls .btn {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+button.sign-up-button {
+    font-size: 14px;
+    background: #fff;
+    color: #0069ff;
+}
+
+button.login-button {
+    font-family: "Sailec-Medium";
+    font-weight: 400;
+    font-size: 14px;
+    background: transparent;
+    color: rgba(3,27,78,.7);
+    border: none;
+}
+
+.btn-primary:active, .btn-primary.btn-active {
+    color: #ffffff;
+}
+
+.d-editor-button-bar button {
+    background-color: transparent;
+    border: none;
+}

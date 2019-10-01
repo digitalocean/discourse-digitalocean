@@ -1,20 +1,41 @@
-.htaccess
-/config.php
-admin/config.php
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
-!index.html
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-download/
-image/data/
-image/cache/
-system/cache/
-system/logs/
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
 
-system/storage/
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# vQmod log files
-vqmod/logs/*
-# vQmod cache files
-vqmod/vqcache/*
-vqmod/checked.cache
-vqmod/mods.cache
+# App generated files #
+######################
+.vscode

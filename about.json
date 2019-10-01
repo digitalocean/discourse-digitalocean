@@ -1,0 +1,32 @@
+{
+  "name": "DigitalOcean",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": nwade,
+  "theme_version": 1.0,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "Sailec-Regular": "assets/Sailec-Regular.woff2",
+    "Sailec-Medium": "assets/Sailec-Medium.woff2",
+    "Sailec-Bold": "assets/Sailec-Bold.woff2",
+    "Sailec-Light": "assets/Sailec-Light.woff2",
+    "Sailec-RegularItalic": "assets/Sailec-RegularItalic.woff2",
+    "Sailec-MediumItalic": "assets/Sailec-MediumItalic.woff2"
+  },
+  "color_schemes": {
+    "DigitalOcean-Light": {
+      "primary": "404a5e",
+      "secondary": "ffffff",
+      "tertiary": "0069ff",
+      "quaternary": "e45735",
+      "header_background": "ffffff",
+      "header_primary": "404a5e",
+      "highlight": "F56109",
+      "danger": "e45735",
+      "success": "009900",
+      "love": "fa6c8d"
+    }
+  },
+}
