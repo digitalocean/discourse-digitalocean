@@ -1,0 +1,2 @@
+# discourse-digitalocean
+Discourse theme
